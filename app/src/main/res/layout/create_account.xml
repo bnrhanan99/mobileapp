@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="380dp"
+    android:layout_height="800dp"
+    style="@style/MainConstraintLayout"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/vector"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="25dp"
+        style="@style/ImageViewStyle"
+        android:src="@drawable/vector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/picture" />
+
+    <TextView
+        android:id="@+id/GetStarted"
+        style="@style/GetStartedText"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="159dp"
+        android:text="@string/get_started"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/access"
+        android:layout_width="183dp"
+        android:layout_height="17dp"
+        style="@style/SubtitleText"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="203dp"
+        android:text="@string/by_creating_a_free_account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/full_name"
+        style="@style/InputFieldStyle"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="256dp"
+        app:endIconDrawable="@drawable/user"
+        app:endIconMode="custom"
+        android:hint="@string/full_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/GetStarted">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/valid_email"
+        style="@style/InputFieldStyle"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="325dp"
+        android:hint="@string/valid_email"
+        app:endIconDrawable="@drawable/mail"
+        app:endIconMode="custom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/full_name">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phone_number"
+        style="@style/InputFieldStyle"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="394dp"
+        android:hint="@string/phone_number"
+        app:endIconDrawable="@drawable/smartphone"
+        app:endIconMode="custom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/valid_email">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/strong_pass"
+        style="@style/InputFieldStyle"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="463dp"
+        android:hint="@string/strong_password"
+        app:endIconDrawable="@drawable/lock"
+        app:endIconMode="custom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone_number">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/remember_me"
+        style="@style/CheckboxStyle"
+        android:layout_marginTop="530dp"
+        android:layout_marginStart="41dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="12dp"
+        style="@style/OtherBlackText"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="532dp"
+        android:text="@string/by_checking_the_box_you_agree_to_our"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/terms_text"
+        android:layout_width="0dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="532dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/terms"
+        style="@style/OtherPurpleText"
+        app:layout_constraintEnd_toStartOf="@+id/and_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/and_text"
+        android:layout_width="18dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="532dp"
+        android:text="@string/and"
+        style="@style/OtherBlackText"
+        app:layout_constraintEnd_toStartOf="@+id/conditions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/conditions"
+        android:layout_width="0dp"
+        android:layout_height="12dp"
+        android:text="@string/conditions"
+        style="@style/OtherPurpleText"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="532dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/next_button"
+        style="@style/NextButtonStyle"
+        android:layout_marginTop="668dp"
+        android:text="@string/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/already_a_member"
+        style="@style/AlreadyMemberText"
+        android:text="@string/already_a_member"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="743dp"
+        android:layout_marginStart="83dp"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/login"
+        style="@style/LoginText"
+        android:text="@string/log_in"
+        app:layout_constraintStart_toEndOf="@id/already_a_member"
+        app:layout_constraintTop_toTopOf="@id/already_a_member"
+        android:layout_marginStart="8dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
