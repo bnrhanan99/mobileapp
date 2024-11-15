@@ -3,10 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="380dp"
+    android:layout_width="360dp"
     android:layout_height="800dp"
     style="@style/MainConstraintLayout"
-    tools:context=".MainActivity">
+    tools:context=".RegisterActivity">
 
     <ImageView
         android:id="@+id/vector"
@@ -165,21 +165,22 @@
     <Button
         android:id="@+id/next_button"
         style="@style/NextButtonStyle"
-        android:layout_marginTop="668dp"
+        android:layout_marginTop="624dp"
         android:text="@string/next"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/already_a_member"
         style="@style/AlreadyMemberText"
+        android:layout_gravity="center"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="680dp"
         android:text="@string/already_a_member"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="743dp"
-        android:layout_marginStart="83dp"
-        android:layout_gravity="center" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/login"
