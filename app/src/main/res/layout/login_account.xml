@@ -5,7 +5,7 @@
     android:layout_width="360dp"
     android:layout_height="800dp"
     style="@style/MainConstraintLayout"
-    tools:context=".LoginActivity">
+    tools:context=".LoginFragment">
 
     <ImageView
         android:id="@+id/vector"
@@ -107,18 +107,19 @@
     <Button
         android:id="@+id/next_button"
         style="@style/NextButtonStyle"
-        android:layout_marginTop="640dp"
+        android:layout_marginTop="600dp"
         android:text="@string/next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.733"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <TextView
         android:id="@+id/new_member"
         style="@style/NewMemberText"
         android:layout_marginStart="108dp"
-        android:layout_marginTop="696dp"
+        android:layout_marginTop="660dp"
         android:text="@string/new_member"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
