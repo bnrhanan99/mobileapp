@@ -27,7 +27,6 @@ class RecipeAdapter(
         val recipe = recipes[position]
         holder.bind(recipe)
 
-        // Use the correct context here for Toast
         holder.itemView.setOnClickListener {
             Toast.makeText(context, "Clicked on ${recipe.name}", Toast.LENGTH_SHORT).show()
         }
