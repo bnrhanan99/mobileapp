@@ -29,14 +29,16 @@
 
     <TextView
         android:id="@+id/access"
-        android:layout_width="183dp"
-        android:layout_height="17dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         style="@style/SubtitleText"
-        android:layout_marginStart="78dp"
-        android:layout_marginTop="203dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="@string/by_creating_a_free_account"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/full_name"
@@ -66,7 +68,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintTop_toBottomOf="@id/full_name">
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/valid_email_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -83,7 +84,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintTop_toBottomOf="@id/valid_email">
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/valid_email_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -100,7 +100,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintTop_toBottomOf="@id/phone_number">
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/strong_pass_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"/>
@@ -120,8 +119,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         style="@style/OtherBlackText"
         android:layout_marginStart="60dp"
         android:layout_marginTop="532dp"
@@ -131,8 +130,8 @@
 
     <TextView
         android:id="@+id/terms_text"
-        android:layout_width="0dp"
-        android:layout_height="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="210dp"
         android:layout_marginTop="532dp"
         android:layout_marginEnd="4dp"
@@ -144,8 +143,8 @@
 
     <TextView
         android:id="@+id/and_text"
-        android:layout_width="18dp"
-        android:layout_height="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="240dp"
         android:layout_marginTop="532dp"
         android:text="@string/and"
@@ -156,8 +155,8 @@
 
     <TextView
         android:id="@+id/conditions"
-        android:layout_width="0dp"
-        android:layout_height="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/conditions"
         style="@style/OtherPurpleText"
         android:layout_marginStart="260dp"

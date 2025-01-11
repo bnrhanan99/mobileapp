@@ -62,15 +62,15 @@
     </style>
 
     <style name="NewMemberText">
-        <item name="android:layout_width">95dp</item>
-        <item name="android:layout_height">19dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">13sp</item>
     </style>
 
     <style name="RegisterNowText">
-        <item name="android:layout_width">100dp</item>
-        <item name="android:layout_height">18dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">#6C63FF</item>
         <item name="android:textSize">13sp</item>
     </style>
