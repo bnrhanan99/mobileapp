@@ -23,4 +23,6 @@
     <string name="terms">Terms</string>
     <string name="and">" and"</string>
     <string name="conditions">" Conditions."</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
