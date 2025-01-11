@@ -6,7 +6,7 @@
     android:layout_width="360dp"
     android:layout_height="800dp"
     style="@style/MainConstraintLayout"
-    tools:context=".RegisterFragment">
+    tools:context=".RegisterActivity">
 
     <ImageView
         android:id="@+id/vector"
@@ -27,19 +27,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <TextView
         android:id="@+id/access"
-        style="@style/SubtitleText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        style="@style/SubtitleText"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="212dp"
+        android:layout_marginTop="16dp"
         android:text="@string/by_creating_a_free_account"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/full_name"
@@ -171,7 +170,7 @@
     <Button
         android:id="@+id/next_button"
         style="@style/NextButtonStyle"
-        android:layout_marginTop="590dp"
+        android:layout_marginTop="624dp"
         android:text="@string/next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.603"
@@ -183,7 +182,7 @@
         style="@style/AlreadyMemberText"
         android:layout_gravity="center"
         android:layout_marginStart="88dp"
-        android:layout_marginTop="645dp"
+        android:layout_marginTop="680dp"
         android:text="@string/already_a_member"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
