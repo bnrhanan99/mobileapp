@@ -1,6 +1,6 @@
 package com.example.mobileapp
 
-class CredentialsManager private constructor() {
+class CredentialsManager {
     private val credentials = mutableMapOf<String, String>()
 
     private val emailPattern = "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$"
