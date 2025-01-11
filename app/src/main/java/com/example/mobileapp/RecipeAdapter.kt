@@ -1,7 +1,6 @@
 package com.example.mobileapp
 
 import android.content.Context
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class RecipeAdapter(
     private val context: Context,
-    private val recipes: List<Recipe>
+    private var recipes: List<Recipe>
 ) : RecyclerView.Adapter<RecipeAdapter.RecipeViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecipeViewHolder {
@@ -37,6 +36,13 @@ class RecipeAdapter(
 
         holder.like.setOnClickListener {
             Toast.makeText(context, "Liked ${recipe.name}", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    fun updateRecipes(newRecipes: List<Recipe>) {
+        if (newRecipes != recipes) {
+            recipes = newRecipes
+            notifyDataSetChanged()
         }
     }
 
