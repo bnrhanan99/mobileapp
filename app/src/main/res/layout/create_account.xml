@@ -6,7 +6,7 @@
     android:layout_width="360dp"
     android:layout_height="800dp"
     style="@style/MainConstraintLayout"
-    tools:context=".RegisterActivity">
+    tools:context=".RegisterFragment">
 
     <ImageView
         android:id="@+id/vector"
@@ -170,7 +170,7 @@
     <Button
         android:id="@+id/next_button"
         style="@style/NextButtonStyle"
-        android:layout_marginTop="624dp"
+        android:layout_marginTop="590dp"
         android:text="@string/next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.603"
@@ -182,7 +182,7 @@
         style="@style/AlreadyMemberText"
         android:layout_gravity="center"
         android:layout_marginStart="88dp"
-        android:layout_marginTop="680dp"
+        android:layout_marginTop="645dp"
         android:text="@string/already_a_member"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

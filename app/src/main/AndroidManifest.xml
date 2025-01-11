@@ -12,21 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mobileapp"
         tools:targetApi="31">
-        <activity
-            android:name=".FragmentB"
-            android:exported="false" />
-        <activity
-            android:name=".FragmentA"
-            android:exported="false" />
-        <activity
-            android:name=".SampleActivity"
-            android:exported="true" />
+
         <activity
             android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
