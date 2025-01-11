@@ -68,7 +68,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintTop_toBottomOf="@id/full_name">
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/valid_email_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -85,7 +84,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintTop_toBottomOf="@id/valid_email">
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/valid_email_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -102,7 +100,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintTop_toBottomOf="@id/phone_number">
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/strong_pass_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"/>
