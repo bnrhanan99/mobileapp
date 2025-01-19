@@ -42,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
 
                 Log.d("MainActivity", "Valid credentials")
 
-                val nextIntent = Intent(this@LoginActivity, NewActivity::class.java) // Example next activity
+                val nextIntent = Intent(this@LoginActivity, MainActivity::class.java)
                 startActivity(nextIntent)
                 finish()
             } else {
